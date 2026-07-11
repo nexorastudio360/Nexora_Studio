@@ -1,0 +1,8 @@
+{
+  "name": "Nexora Studio",
+  "description": "Flagship website of Nexora Studio, a premium global digital innovation company. Designing the Future with custom software, UI/UX, and AI solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
