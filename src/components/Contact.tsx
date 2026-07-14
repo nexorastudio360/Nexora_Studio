@@ -301,31 +301,6 @@ export const Contact: React.FC<ContactProps> = ({ onAddLead }) => {
     setSubmitError('');
 
     try {
-      // Gather metadata
-      const browser = navigator.userAgent;
-      const device = navigator.platform;
-
-      // Destination 1: Send beautiful HTML email via API route
-      const response = await fetch('/api/inquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          ...data,
-          phone: `${data.phoneCountryCode} ${data.phoneNumber}`,
-          files: uploadedFiles,
-          browser,
-          device
-        })
-      });
-
-      const responseData = await response.json();
-
-      if (!response.ok || !responseData.success) {
-        throw new Error(responseData.error || 'Failed to dispatch project discovery intake.');
-      }
-
       // Add to local sandbox CRM to maintain full interactive fidelity
       const crmSummaryText = `[Project Discovery Intake]
 - Business Type: ${data.businessType}
@@ -353,7 +328,7 @@ export const Contact: React.FC<ContactProps> = ({ onAddLead }) => {
 
       onAddLead(newLead);
 
-      // Destination 2: WhatsApp preparation and redirection
+      // WhatsApp preparation and redirection
       const formatValue = (val: string | undefined) => {
         if (!val) return 'Not Provided';
         const trimmed = val.trim();
@@ -562,7 +537,7 @@ We will review your project and respond as soon as possible.
       reset();
       setUploadedFiles([]);
     } catch (err: any) {
-      setSubmitError(err.message || 'An unexpected error occurred while transmitting your project discovery details.');
+      setSubmitError(err.message || 'An unexpected error occurred while preparing your project details.');
     } finally {
       setIsSubmitting(false);
     }
