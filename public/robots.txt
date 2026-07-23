@@ -1,0 +1,130 @@
+# Nexora Studio - Enterprise Crawl Management
+# Production robots.txt for Search Engine Optimization
+# Last Modified: 2026-07-23
+# Compatible with: Google, Bing, Yahoo, DuckDuckGo, Baidu
+
+# Default rules for all user agents
+User-agent: *
+Allow: /
+Allow: *.js
+Allow: *.css
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.webp
+Allow: *.gif
+Allow: *.svg
+Allow: *.woff
+Allow: *.woff2
+Allow: *.ttf
+Allow: *.eot
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.env.development.local
+Disallow: /node_modules/
+Disallow: /.next/
+Disallow: /dist/
+
+# API endpoints - prevent indexing
+Disallow: /api/
+Disallow: /api/*
+
+# Source maps - prevent indexing
+Disallow: /*.map
+Disallow: /*.map.js
+
+# Specific search engine optimizations
+# Google-specific crawling preferences
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Social media crawlers
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexImages
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider-image
+Allow: /
+
+# Block bad bots and spammers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
+
+# Sitemap reference
+Sitemap: https://nexora-studio-360.vercel.app/sitemap.xml
+
+# Canonical domain declaration
+# Note: Use robots meta tag in HTML for canonical specification
+# This is supplementary documentation only

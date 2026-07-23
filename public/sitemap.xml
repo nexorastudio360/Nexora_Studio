@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:mobile="http://www.mobile.googlebot.com/schemas/mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage / Root URL -->
+  <!-- This is the primary entry point for the SPA -->
+  <!-- All sections are accessible via anchor navigation from this page -->
+  <url>
+    <loc>https://nexora-studio-360.vercel.app/</loc>
+    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <mobile:mobile/>
+    <image:image>
+      <image:loc>https://nexora-studio-360.vercel.app/og-image.jpg</image:loc>
+      <image:title>Nexora Studio - Premium Enterprise AI Workspace</image:title>
+      <image:caption>Premium digital innovation company</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
