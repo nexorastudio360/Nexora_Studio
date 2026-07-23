@@ -1,0 +1,28 @@
+{
+  "name": "Nexora Studio",
+  "short_name": "Nexora",
+  "description": "Premium global digital innovation company. Expert custom software development, UI/UX design, and AI solutions for enterprises.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["technology", "business"],
+  "screenshots": [],
+  "shortcuts": []
+}
