@@ -80,6 +80,13 @@
     <!-- Favicon Preload -->
     <link rel="preload" href="/favicon.jpg" as="image" type="image/jpeg" />
 
+    <!-- Search Engine Verification (MODULE 7) -->
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="placeholder-replace-with-your-verification-code" />
+    
+    <!-- Bing Webmaster Verification -->
+    <meta name="msvalidate.01" content="placeholder-replace-with-your-verification-code" />
+
     <!-- Styles & Assets -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
 
@@ -389,6 +396,70 @@
       ]
     }
     </script>
+
+    <!-- Google Analytics 4 Integration (MODULE 7: Analytics Infrastructure) -->
+    <!-- Consent-friendly implementation: Will only send data if Measurement ID is configured -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // Replace 'G-XXXXXXXXXX' with your actual Google Analytics 4 Measurement ID
+      // Only enables tracking if valid ID is configured
+      const ga4MeasurementId = 'G-XXXXXXXXXX';
+      
+      if (ga4MeasurementId && ga4MeasurementId !== 'G-XXXXXXXXXX') {
+        gtag('config', ga4MeasurementId, {
+          'anonymize_ip': true,
+          'allow_google_signals': false,
+          'allow_ad_personalization_signals': false,
+          'send_page_view': true
+        });
+      }
+    </script>
+
+    <!-- Google Tag Manager (MODULE 7: Analytics Infrastructure) -->
+    <!-- Consent-friendly implementation: Will only load if GTM ID is configured -->
+    <script>
+      (function(w,d,s,l,i){
+        // Replace 'GTM-XXXXXXX' with your actual Google Tag Manager ID
+        const gtmId = 'GTM-XXXXXXX';
+        
+        // Only load GTM if valid ID is configured
+        if (gtmId && gtmId !== 'GTM-XXXXXXX') {
+          w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+gtmId+dl;
+          f.parentNode.insertBefore(j,f);
+        }
+      })(window,document,'script','dataLayer','gtmId');
+    </script>
+
+    <!-- Microsoft Clarity Integration (MODULE 7: Analytics Infrastructure) -->
+    <!-- Optional integration: Will only load if Clarity Project ID is configured -->
+    <script>
+      (function(c,l,a,r,i,t,y){
+        // Replace 'CLARITY_PROJECT_ID' with your actual Microsoft Clarity Project ID
+        const clarityProjectId = 'CLARITY_PROJECT_ID';
+        
+        // Only load Clarity if valid ID is configured
+        if (clarityProjectId && clarityProjectId !== 'CLARITY_PROJECT_ID') {
+          c[l]=c[l] || function(){(c[l].q=c[l].q||[]).push(arguments)};
+          t=document.createElement('script');
+          t.async=true;t.src='https://clarity.ms/tag/'+clarityProjectId+'?ref=bheader&t='+new Date().getTime();
+          y=document.getElementsByTagName('script')[0];
+          y.parentNode.insertBefore(t,y);
+        }
+      })(window, "clarity");
+    </script>
+
+    <!-- Noscript fallback for Google Tag Manager -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
