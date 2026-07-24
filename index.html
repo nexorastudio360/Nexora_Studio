@@ -22,6 +22,14 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://nexora-studio-360.vercel.app/" />
 
+    <!-- International SEO (MODULE 8: Hreflang Architecture) -->
+    <!-- Default language version (English) -->
+    <link rel="alternate" hreflang="en" href="https://nexora-studio-360.vercel.app/" />
+    <!-- Language-region specific -->
+    <link rel="alternate" hreflang="en-US" href="https://nexora-studio-360.vercel.app/" />
+    <!-- Fallback for all other languages -->
+    <link rel="alternate" hreflang="x-default" href="https://nexora-studio-360.vercel.app/" />
+
     <!-- Open Graph Protocol (Social Sharing) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nexora-studio-360.vercel.app/" />
@@ -92,16 +100,19 @@
 
     <!-- JSON-LD Structured Data (MODULE 4) -->
     
-    <!-- Organization Schema -->
+    <!-- Organization Schema (MODULE 8: AI Search Enhanced) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": "https://nexora-studio-360.vercel.app/#organization",
       "name": "Nexora Studio",
+      "alternateName": "Nexora",
       "url": "https://nexora-studio-360.vercel.app/",
       "logo": "https://nexora-studio-360.vercel.app/favicon.jpg",
+      "image": "https://nexora-studio-360.vercel.app/og-image.jpg",
       "description": "Premium global digital innovation company delivering expert custom software development, UI/UX design, and AI solutions for enterprises.",
+      "disambiguatingDescription": "Full-stack web design, custom software development, AI solutions, and business automation services for global enterprises.",
       "sameAs": [
         "https://www.linkedin.com/company/nexora-studio",
         "https://twitter.com/NexoraStudio",
@@ -112,12 +123,25 @@
         "@type": "ContactPoint",
         "telephone": "+92-309-6432755",
         "contactType": "customer service",
-        "email": "hello@nexorastudio.com"
+        "email": "hello@nexorastudio.com",
+        "areaServed": "Global",
+        "availableLanguage": "en-US"
       },
       "brand": {
         "@type": "Brand",
-        "name": "Nexora Studio"
+        "name": "Nexora Studio",
+        "logo": "https://nexora-studio-360.vercel.app/favicon.jpg"
       },
+      "knowsAbout": [
+        "Web Design",
+        "Custom Software Development",
+        "UI/UX Design",
+        "AI Solutions",
+        "Business Automation",
+        "Full-Stack Development",
+        "Enterprise Solutions"
+      ],
+      "slogan": "Premium Global Digital Innovation Company",
       "foundingOrganization": {
         "@type": "Organization",
         "name": "Nexora Studio",
@@ -126,7 +150,7 @@
     }
     </script>
 
-    <!-- WebSite Schema -->
+    <!-- WebSite Schema (MODULE 8: AI Search Enhanced) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -134,7 +158,8 @@
       "@id": "https://nexora-studio-360.vercel.app/#website",
       "name": "Nexora Studio",
       "url": "https://nexora-studio-360.vercel.app/",
-      "description": "Premium global digital innovation company",
+      "description": "Premium global digital innovation company delivering expert custom software development, UI/UX design, and AI solutions for enterprises.",
+      "image": "https://nexora-studio-360.vercel.app/og-image.jpg",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
@@ -146,11 +171,16 @@
         "@type": "Organization",
         "@id": "https://nexora-studio-360.vercel.app/#organization"
       },
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "isAccessibleForFree": true
     }
     </script>
 
-    <!-- WebPage Schema -->
+    <!-- WebPage Schema (MODULE 8: AI Search Enhanced) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -182,11 +212,21 @@
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "@id": "https://nexora-studio-360.vercel.app/#breadcrumb"
+      },
+      "datePublished": "2025-01-01T00:00:00Z",
+      "dateModified": "2026-07-24T00:00:00Z",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
       }
     }
     </script>
 
-    <!-- ProfessionalService Schema -->
+    <!-- ProfessionalService Schema (MODULE 8: AI Search Enhanced) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -209,6 +249,20 @@
       "provider": {
         "@type": "Organization",
         "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "serviceType": [
+        "Web Design",
+        "Web Development",
+        "Software Development",
+        "UI/UX Design",
+        "AI Solutions",
+        "Business Automation"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-309-6432755",
+        "email": "hello@nexorastudio.com",
+        "contactType": "customer service"
       }
     }
     </script>
@@ -342,6 +396,54 @@
       "serviceType": "Consulting",
       "category": "Business Process Automation",
       "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- AggregateOffer Schema (MODULE 8: AI Search - Service Pricing) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AggregateOffer",
+      "@id": "https://nexora-studio-360.vercel.app/#aggregate-offer",
+      "name": "Nexora Studio Services",
+      "description": "Professional services packages including web design, custom software development, UI/UX design, AI solutions, and business automation.",
+      "priceCurrency": "USD",
+      "lowPrice": "5000",
+      "highPrice": "250000",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Premium Website Design",
+          "description": "Custom web design starting from",
+          "price": "5000",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Custom Web Application",
+          "description": "Full-stack web development from",
+          "price": "10000",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Enterprise Software Solution",
+          "description": "Custom software development from",
+          "price": "25000",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "AI Integration & Solutions",
+          "description": "AI-powered solutions from",
+          "price": "15000",
+          "priceCurrency": "USD"
+        }
+      ],
+      "seller": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      }
     }
     </script>
 
