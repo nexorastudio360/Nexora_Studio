@@ -1,16 +1,469 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Character Encoding -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexora Studio | Designing the Future</title>
-    <link rel="icon" type="image/jpeg" href="/src/assets/images/nexora_logo.jpg" />
-    <link rel="apple-touch-icon" href="/src/assets/images/nexora_logo.jpg" />
-    <meta name="description" content="Flagship website of Nexora Studio, a premium global digital innovation company. Designing the Future with custom software, UI/UX, and AI solutions." />
+
+    <!-- Viewport & Device Support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- SEO: Primary Title & Description -->
+    <title>Nexora Studio | Web Design & Custom Software Development</title>
+    <meta name="description" content="Premium global digital innovation company. Expert custom software development, UI/UX design, and AI solutions for enterprises." />
+
+    <!-- SEO: Core Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Nexora Studio" />
+    <meta name="creator" content="Nexora Studio" />
+    <meta name="publisher" content="Nexora Studio" />
+    <meta name="category" content="Technology" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nexora-studio-360.vercel.app/" />
+
+    <!-- Open Graph Protocol (Social Sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nexora-studio-360.vercel.app/" />
+    <meta property="og:title" content="Nexora Studio | Premium Web Design & Custom Software" />
+    <meta property="og:description" content="Transform your vision into reality. Premium global digital innovation company delivering expert custom software, AI-powered solutions, and world-class UI/UX design." />
+    <meta property="og:site_name" content="Nexora Studio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://nexora-studio-360.vercel.app/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://nexora-studio-360.vercel.app/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1376" />
+    <meta property="og:image:height" content="768" />
+    <meta property="og:image:alt" content="Nexora Studio - Premium Enterprise AI Workspace and Digital Innovation Platform" />
+
+    <!-- Twitter Card Protocol (Social Sharing for X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nexora Studio | Enterprise Web Design & AI Solutions" />
+    <meta name="twitter:description" content="Premium digital innovation company delivering custom software, AI-powered solutions, and world-class UI/UX design for enterprises globally." />
+    <meta name="twitter:image" content="https://nexora-studio-360.vercel.app/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Nexora Studio - Premium Enterprise AI Workspace and Digital Innovation Platform" />
+    <meta name="twitter:url" content="https://nexora-studio-360.vercel.app/" />
+    <meta name="twitter:site" content="@NexoraStudio" />
+    <meta name="twitter:creator" content="@NexoraStudio" />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" sizes="any" />
+    <link rel="apple-touch-icon" href="/favicon.jpg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Theme & Branding -->
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="application-name" content="Nexora Studio" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Nexora Studio" />
+
+    <!-- Format Detection & Smart App Banners -->
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+    <!-- Generator Tag -->
+    <meta name="generator" content="React + Vite + Express" />
+
+    <!-- Resource Hints (MODULE 6: Performance Optimization) -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://upload.wikimedia.org" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin />
+    
+    <!-- Critical Font Preload -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" as="style" />
+    
+    <!-- Hero Image Preload for LCP Optimization -->
+    <link rel="preload" href="/og-image.jpg" as="image" imagesrcset="/og-image.jpg 1376w" imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1376px" fetchpriority="high" type="image/jpeg" />
+    
+    <!-- Favicon Preload -->
+    <link rel="preload" href="/favicon.jpg" as="image" type="image/jpeg" />
+
+    <!-- Search Engine Verification (MODULE 7) -->
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="placeholder-replace-with-your-verification-code" />
+    
+    <!-- Bing Webmaster Verification -->
+    <meta name="msvalidate.01" content="placeholder-replace-with-your-verification-code" />
+
+    <!-- Styles & Assets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+    <!-- JSON-LD Structured Data (MODULE 4) -->
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://nexora-studio-360.vercel.app/#organization",
+      "name": "Nexora Studio",
+      "url": "https://nexora-studio-360.vercel.app/",
+      "logo": "https://nexora-studio-360.vercel.app/favicon.jpg",
+      "description": "Premium global digital innovation company delivering expert custom software development, UI/UX design, and AI solutions for enterprises.",
+      "sameAs": [
+        "https://www.linkedin.com/company/nexora-studio",
+        "https://twitter.com/NexoraStudio",
+        "https://www.facebook.com/nexorastudio",
+        "https://www.instagram.com/nexorastudio"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-309-6432755",
+        "contactType": "customer service",
+        "email": "hello@nexorastudio.com"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Nexora Studio"
+      },
+      "foundingOrganization": {
+        "@type": "Organization",
+        "name": "Nexora Studio",
+        "url": "https://nexora-studio-360.vercel.app/"
+      }
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://nexora-studio-360.vercel.app/#website",
+      "name": "Nexora Studio",
+      "url": "https://nexora-studio-360.vercel.app/",
+      "description": "Premium global digital innovation company",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://nexora-studio-360.vercel.app/?search={search_term_string}"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "inLanguage": "en-US"
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://nexora-studio-360.vercel.app/#webpage",
+      "name": "Nexora Studio | Web Design & Custom Software Development",
+      "url": "https://nexora-studio-360.vercel.app/",
+      "description": "Premium global digital innovation company. Expert custom software development, UI/UX design, and AI solutions for enterprises.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://nexora-studio-360.vercel.app/og-image.jpg",
+        "width": 1376,
+        "height": 768,
+        "description": "Nexora Studio - Premium Enterprise AI Workspace and Digital Innovation Platform"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://nexora-studio-360.vercel.app/og-image.jpg"
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://nexora-studio-360.vercel.app/#website"
+      },
+      "about": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "inLanguage": "en-US",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": "https://nexora-studio-360.vercel.app/#breadcrumb"
+      }
+    }
+    </script>
+
+    <!-- ProfessionalService Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://nexora-studio-360.vercel.app/#service",
+      "name": "Nexora Studio",
+      "description": "Premium digital innovation company delivering custom software, AI-powered solutions, and world-class UI/UX design.",
+      "url": "https://nexora-studio-360.vercel.app/",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "availableLanguage": {
+        "@type": "Language",
+        "name": "English"
+      },
+      "logo": "https://nexora-studio-360.vercel.app/favicon.jpg",
+      "image": "https://nexora-studio-360.vercel.app/og-image.jpg",
+      "priceRange": "$$$$",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      }
+    }
+    </script>
+
+    <!-- Service: Web Design -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://nexora-studio-360.vercel.app/#service-web-design",
+      "name": "Web Design",
+      "description": "Premium web design services creating visually stunning, user-centric digital experiences that drive engagement and conversions.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "serviceType": "Design",
+      "category": "Web Design",
+      "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- Service: Web Development -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://nexora-studio-360.vercel.app/#service-web-development",
+      "name": "Web Development",
+      "description": "Full-stack web development services using modern technologies to build scalable, high-performance web applications.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "serviceType": "Development",
+      "category": "Web Development",
+      "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- Service: Custom Software Development -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://nexora-studio-360.vercel.app/#service-custom-software",
+      "name": "Custom Software Development",
+      "description": "Enterprise-grade custom software solutions tailored to your unique business requirements and scalability needs.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "serviceType": "Development",
+      "category": "Software Development",
+      "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- Service: AI Solutions -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://nexora-studio-360.vercel.app/#service-ai-solutions",
+      "name": "AI Solutions",
+      "description": "Cutting-edge artificial intelligence solutions including machine learning models, chatbots, and intelligent automation.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "serviceType": "Consulting",
+      "category": "AI Technology",
+      "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- Service: UI/UX Design -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://nexora-studio-360.vercel.app/#service-ui-ux",
+      "name": "UI/UX Design",
+      "description": "User experience and interface design creating intuitive, accessible, and beautiful digital products.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "serviceType": "Design",
+      "category": "UX/UI Design",
+      "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- Service: Business Automation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://nexora-studio-360.vercel.app/#service-automation",
+      "name": "Business Automation",
+      "description": "Intelligent automation solutions that streamline business processes, reduce operational costs, and improve efficiency.",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "serviceType": "Consulting",
+      "category": "Business Process Automation",
+      "url": "https://nexora-studio-360.vercel.app/"
+    }
+    </script>
+
+    <!-- ContactPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": "https://nexora-studio-360.vercel.app/#contact",
+      "url": "https://nexora-studio-360.vercel.app/",
+      "name": "Contact Nexora Studio",
+      "description": "Get in touch with Nexora Studio for a consultation on your project.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-309-6432755",
+        "contactType": "customer service",
+        "email": "hello@nexorastudio.com",
+        "areaServed": "Global"
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "@id": "https://nexora-studio-360.vercel.app/#organization"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora-studio-360.vercel.app/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nexora-studio-360.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://nexora-studio-360.vercel.app/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "https://nexora-studio-360.vercel.app/#contact"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics 4 Integration (MODULE 7: Analytics Infrastructure) -->
+    <!-- Consent-friendly implementation: Will only send data if Measurement ID is configured -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // Replace 'G-XXXXXXXXXX' with your actual Google Analytics 4 Measurement ID
+      // Only enables tracking if valid ID is configured
+      const ga4MeasurementId = 'G-XXXXXXXXXX';
+      
+      if (ga4MeasurementId && ga4MeasurementId !== 'G-XXXXXXXXXX') {
+        gtag('config', ga4MeasurementId, {
+          'anonymize_ip': true,
+          'allow_google_signals': false,
+          'allow_ad_personalization_signals': false,
+          'send_page_view': true
+        });
+      }
+    </script>
+
+    <!-- Google Tag Manager (MODULE 7: Analytics Infrastructure) -->
+    <!-- Consent-friendly implementation: Will only load if GTM ID is configured -->
+    <script>
+      (function(w,d,s,l,i){
+        // Replace 'GTM-XXXXXXX' with your actual Google Tag Manager ID
+        const gtmId = 'GTM-XXXXXXX';
+        
+        // Only load GTM if valid ID is configured
+        if (gtmId && gtmId !== 'GTM-XXXXXXX') {
+          w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});
+          var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+          j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+gtmId+dl;
+          f.parentNode.insertBefore(j,f);
+        }
+      })(window,document,'script','dataLayer','gtmId');
+    </script>
+
+    <!-- Microsoft Clarity Integration (MODULE 7: Analytics Infrastructure) -->
+    <!-- Optional integration: Will only load if Clarity Project ID is configured -->
+    <script>
+      (function(c,l,a,r,i,t,y){
+        // Replace 'CLARITY_PROJECT_ID' with your actual Microsoft Clarity Project ID
+        const clarityProjectId = 'CLARITY_PROJECT_ID';
+        
+        // Only load Clarity if valid ID is configured
+        if (clarityProjectId && clarityProjectId !== 'CLARITY_PROJECT_ID') {
+          c[l]=c[l] || function(){(c[l].q=c[l].q||[]).push(arguments)};
+          t=document.createElement('script');
+          t.async=true;t.src='https://clarity.ms/tag/'+clarityProjectId+'?ref=bheader&t='+new Date().getTime();
+          y=document.getElementsByTagName('script')[0];
+          y.parentNode.insertBefore(t,y);
+        }
+      })(window, "clarity");
+    </script>
+
+    <!-- Noscript fallback for Google Tag Manager -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe>
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>
 

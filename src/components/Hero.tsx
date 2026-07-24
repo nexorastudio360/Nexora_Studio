@@ -138,8 +138,12 @@ export const Hero: React.FC<HeroProps> = ({ onCtas }) => {
               <img 
                 src={heroImage} 
                 alt="Premium Enterprise AI Workstation" 
-                className="w-full h-full object-cover object-center"
-                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover"
+                fetchPriority="high"
+                decoding="async"
+                loading="eager"
+                width={1376}
+                height={768}
               />
             </motion.div>
 
@@ -275,7 +279,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtas }) => {
       {/* Trust Logos Row */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 w-full mt-12 relative z-10 border-t border-white/5 pt-12" id="hero-logos-row">
         <div className="flex flex-wrap justify-between items-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" className="h-6 object-contain brightness-0 invert" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" className="h-6 object-contain brightness-0 invert" loading="lazy" decoding="async" />
           <div className="flex items-center gap-2">
             <svg viewBox="0 0 116 100" fill="white" className="h-5">
               <path fillRule="evenodd" clipRule="evenodd" d="M57.5 0L115 100H0L57.5 0z" />
@@ -288,10 +292,10 @@ export const Hero: React.FC<HeroProps> = ({ onCtas }) => {
             </svg>
             <span className="text-white font-bold text-[19px] tracking-tight">OpenAI</span>
           </div>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" alt="Google Cloud" className="h-6 object-contain brightness-0 invert" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Microsoft Azure" className="h-6 object-contain brightness-0 invert" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" className="h-7 object-contain brightness-0 invert" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare" className="h-6 object-contain brightness-0 invert" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" alt="Google Cloud" className="h-6 object-contain brightness-0 invert" loading="lazy" decoding="async" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Microsoft Azure" className="h-6 object-contain brightness-0 invert" loading="lazy" decoding="async" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" className="h-7 object-contain brightness-0 invert" loading="lazy" decoding="async" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" alt="Cloudflare" className="h-6 object-contain brightness-0 invert" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
